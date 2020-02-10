@@ -8,7 +8,7 @@
 
 ## Process dynamic requests
 
-`net/http`パッケージは、requestを受付けて動的に処理するなど必要とされる機能をすべて含んでいる。`http.HandleFunc`関数で新しいハンドラを登録できる。第一引数にはマッチするパスを、第二引数には実行する関数を取ります。もしウェブサイト（http://example.com/）にアクセスしたときに、ユーザに挨拶する場合には、下記のようになります。
+`net/http`パッケージは、requestを受付けて動的に処理するなど必要とされる機能をすべて含んでいる。`http.HandleFunc`関数で新しいハンドラを登録できる。第一引数にはマッチするパスを、第二引数には実行する関数を取ります。もしウェブサイト（[http://example.com/](http://example.com/)）にアクセスしたときに、ユーザに挨拶する場合には、下記のようになります。
 
 ```go
 http.HandleFunc("/", func (w http.ResponseWriter, r *http.Request) {
